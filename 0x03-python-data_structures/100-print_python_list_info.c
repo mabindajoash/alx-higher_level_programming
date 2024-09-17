@@ -1,4 +1,6 @@
 #include <Python.h>
+#include <object.h>
+#include <listobject.h>
 void print_python_list_info(PyObject *p)
 {
 	if (!PyList_Check(p))
@@ -9,7 +11,7 @@ void print_python_list_info(PyObject *p)
 	Py_ssize_t size = PyList_Size(p);
 	Py_ssize_t allocated = ((PyListObject *)p)->allocated;
 
-	printf("[*] Size of the python list = %ld\n", size);
+	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", allocated);
 
 	for (Py_ssize_t i = 0; i < size; i++)
