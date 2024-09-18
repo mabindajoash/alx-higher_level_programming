@@ -9,4 +9,3 @@ def best_score(a_dictionary):
     for key, value in a_dictionary.items():
         if value is a[-1]:
             return key
-
