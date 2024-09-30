@@ -6,7 +6,7 @@ def safe_print_list_integers(my_list=[], x=0):
         lenght += 1
     try:
         if x > lenght:
-            raise Exception
+            raise IndexError
         for i in my_list:
             if counter < x:
                 print("{:d}".format(i), end="")
@@ -15,3 +15,5 @@ def safe_print_list_integers(my_list=[], x=0):
         return counter
     except Exception:
         pass
+    except IndexError:
+        print("IndexError: list index out of range")
