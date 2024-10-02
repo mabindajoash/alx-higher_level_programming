@@ -2,6 +2,6 @@
 """declares a class square"""
 
 
-class square:
+class Square:
     """defines a class square"""
     pass
