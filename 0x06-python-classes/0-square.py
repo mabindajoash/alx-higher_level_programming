@@ -1,0 +1,3 @@
+class square:
+    square
+    pass
