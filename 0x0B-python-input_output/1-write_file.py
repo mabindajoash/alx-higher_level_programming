@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module writes a string to a text file and returns the number of characters written
+Module writes a string to a text file and returns number of characters
 """
 
 
