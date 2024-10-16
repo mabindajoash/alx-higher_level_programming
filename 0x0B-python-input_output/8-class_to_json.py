@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- returns the dictionary description with simple data structure 
+ contains the "class_to_json" function 
  """
 
 
