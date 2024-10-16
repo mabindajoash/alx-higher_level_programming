@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module containing a class "Student"
+Contains the clas "Student"
 """
 
 
