@@ -7,7 +7,6 @@ A module containing class "Rectangle"
 from base import Base
 
 
-
 class Rectangle(Base):
     """This class defines a rectangle"""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -18,25 +17,25 @@ class Rectangle(Base):
         if width <= 0:
             raise ValueError("width must be > 0")
         self.__width = width
-        
+
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
         self.__height = height
-        
+
         if not isinstance(x, int):
             raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
-        
+
         if not isinstance(y, int):
             raise TypeError("y must be an integer")
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
-        
+
     @property
     def width(self):
         """getter for width"""
@@ -50,7 +49,7 @@ class Rectangle(Base):
         if width <= 0:
             raise ValueError("width must be > 0")
         self.__width = width
- 
+
     @property
     def height(self):
         """getter for height"""
@@ -59,13 +58,12 @@ class Rectangle(Base):
     @height.setter
     def height(self, height):
         """setter for height"""
-        
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
         self.__height = height
- 
+
     @property
     def x(self):
         """getter for x"""
@@ -73,13 +71,13 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
-        """setter for x"""        
+        """setter for x"""
         if not isinstance(x, int):
             raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
- 
+
     @property
     def y(self):
         """getter for y"""
@@ -87,7 +85,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
-        """setter for y"""        
+        """setter for y"""
         if not isinstance(y, int):
             raise TypeError("y must be an integer")
         if y < 0:
