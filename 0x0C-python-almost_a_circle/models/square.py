@@ -4,7 +4,7 @@ A module containing class 'square'
 """
 
 
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -23,6 +23,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """setter for size"""
         self.width = self.height = value
 
     def update(self, *args, **kwargs):
@@ -39,4 +40,4 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """return a dictionary rep of class square"""
-        return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self._Rectangle__y}
+        return {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
