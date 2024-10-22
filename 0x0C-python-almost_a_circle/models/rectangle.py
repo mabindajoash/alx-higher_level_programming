@@ -4,7 +4,7 @@ A module containing class "Rectangle"
 """
 
 
-from base import Base
+from models.base import Base
 
 
 
@@ -107,6 +107,7 @@ class Rectangle(Base):
             print("#" * self.__width)
 
     def __str__(self):
+        """string representation function"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):

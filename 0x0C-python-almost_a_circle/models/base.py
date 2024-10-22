@@ -50,7 +50,10 @@ class Base:
             instance = cls(10, 7, 2, 2, 1)
         elif cls.__name__ == 'Square':
             instance = cls(10, 3, 3, 2)
-        instance.update(**dictionary)
+        else:
+            raise ValueError("wrong class")
+        if instance:
+            instance.update(**dictionary)
         return instance
 
     @classmethod
