@@ -1,5 +1,5 @@
 #!/usr/bin/node
-function add(a, b){
+function add (a, b) {
   const args = process.argv.slice(2);
   if (args[1] === undefined) {
     console.log('NaN');
